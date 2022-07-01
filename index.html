@@ -1,0 +1,608 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="MkDocs Material Boilerplate (Starter Kit) - Deploy documentation to hosting platforms (Netlify, GitHub Pages, GitLab Pages, and AWS Amplify Console) with Docker, pipenv, and GitHub Actions.">
+      
+      
+        <meta name="author" content="Romali">
+      
+      
+        <link rel="canonical" href="https://mkdocs.peaceiris.com/">
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
+    
+    
+      
+        <title>UAS PENAMBANGAN DAN PENCARIAN WEB</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#000000">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="assets/css/custom.css">
+    
+    <script>__md_scope=new URL(".",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="black" data-md-color-accent="blue">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#crawling_web" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="UAS PENAMBANGAN DAN PENCARIAN WEB" class="md-header__button md-logo" aria-label="UAS PENAMBANGAN DAN PENCARIAN WEB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            UAS PENAMBANGAN DAN PENCARIAN WEB
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              UAS Pengembangan dan Pencarian Web
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/peaceiris/mkdocs-material-boilerplate" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="UAS PENAMBANGAN DAN PENCARIAN WEB" class="md-nav__button md-logo" aria-label="UAS PENAMBANGAN DAN PENCARIAN WEB" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    UAS PENAMBANGAN DAN PENCARIAN WEB
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/peaceiris/mkdocs-material-boilerplate" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          UAS Pengembangan dan Pencarian Web
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        UAS Pengembangan dan Pencarian Web
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#crawling_web" class="md-nav__link">
+    Crawling Web
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latent_semantic_analysis" class="md-nav__link">
+    Latent Semantic Analysis
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#crawling_web" class="md-nav__link">
+    Crawling Web
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#latent_semantic_analysis" class="md-nav__link">
+    Latent Semantic Analysis
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+  <a href="https://github.com/peaceiris/mkdocs-material-boilerplate/edit/master/docs_sample/index.md" title="Edit this page" class="md-content__button md-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
+  </a>
+
+
+
+<h4 id="crawling_web">Crawling Web<a class="headerlink" href="#crawling_web" title="Permanent link">&para;</a></h4>
+<p>Crawling merupakan proses untuk mendapatkan suatu data dari suatu web. Berikut Merupakan  contoh code crawling data text dari web. Sebelum menjalakan program harus menginstall scrapy di cmd dengan kode seperti dibawah ini.</p>
+<div class="codehilite"><pre><span></span><code>pip install scrapy
+</code></pre></div>
+
+<p>setelah itu, masuk ke direktori kemudian jalankan kode berikut untuk membuat projek baru.</p>
+<div class="codehilite"><pre><span></span><code>scrapy startproject crawling
+</code></pre></div>
+
+<p>setelah folder selesai. membuat import scrapy seperti berilut :</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">scrapy</span>
+</code></pre></div>
+
+<p>Selanjutnya membuat class dan fumgsi untuk url yang akan di crawling, dan masukan link url seperti berikut :</p>
+<div class="codehilite"><pre><span></span><code><span class="k">class</span> <span class="n">QuotesSpider</span>(<span class="n">scrapy</span>.<span class="n">Spider</span>):
+    <span class="nb">name</span> = <span class="s">&quot;quotes&quot;</span>
+
+    <span class="n">def</span> <span class="n">start_requests</span>(<span class="nb">self</span>):
+        <span class="n">urls</span> = [
+            <span class="s">&quot;https://pta.trunojoyo.ac.id/welcome/detail/080211100070&quot;</span>,
+            <span class="s">&quot;https://pta.trunojoyo.ac.id/welcome/detail/090211200001&quot;</span>,
+            <span class="s">&quot;https://pta.trunojoyo.ac.id/welcome/detail/080211100044&quot;</span>,
+            <span class="s">&quot;https://pta.trunojoyo.ac.id/welcome/detail/100211200002&quot;</span>,
+            <span class="s">&quot;https://pta.trunojoyo.ac.id/welcome/detail/080211100119&quot;</span>,
+            <span class="s">&quot;https://pta.trunojoyo.ac.id/welcome/detail/080211100103&quot;</span>,
+            <span class="s">&quot;https://pta.trunojoyo.ac.id/welcome/detail/080211100098&quot;</span>,
+            <span class="s">&quot;https://pta.trunojoyo.ac.id/welcome/detail/090211100079&quot;</span>,
+            <span class="s">&quot;https://pta.trunojoyo.ac.id/welcome/detail/090211100089&quot;</span>,
+            <span class="s">&quot;https://pta.trunojoyo.ac.id/welcome/detail/090211100013&quot;</span>,
+
+        ]
+</code></pre></div>
+
+<p>Membuat def parse untuk kolom yang akan di crawling. seperti gambar berikut:</p>
+<div class="codehilite"><pre><span></span><code>   def parse(self, response):
+        yield{
+        &#39;Abstrak&#39; : response.css(&#39;#content_journal &gt; ul &gt; li &gt; div:nth-child(4) &gt; div:nth-child(2) &gt;  ::text&#39;).extract(),
+
+        }
+</code></pre></div>
+
+<p>kode lengkap serperti berikut :</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">scrapy</span>
+
+
+<span class="k">class</span> <span class="nc">QuotesSpider</span><span class="p">(</span><span class="n">scrapy</span><span class="o">.</span><span class="n">Spider</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;quotes&quot;</span>
+
+    <span class="k">def</span> <span class="nf">start_requests</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">urls</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="s2">&quot;https://pta.trunojoyo.ac.id/welcome/detail/080211100070&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;https://pta.trunojoyo.ac.id/welcome/detail/090211200001&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;https://pta.trunojoyo.ac.id/welcome/detail/080211100044&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;https://pta.trunojoyo.ac.id/welcome/detail/100211200002&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;https://pta.trunojoyo.ac.id/welcome/detail/080211100119&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;https://pta.trunojoyo.ac.id/welcome/detail/080211100103&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;https://pta.trunojoyo.ac.id/welcome/detail/080211100098&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;https://pta.trunojoyo.ac.id/welcome/detail/090211100079&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;https://pta.trunojoyo.ac.id/welcome/detail/090211100089&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;https://pta.trunojoyo.ac.id/welcome/detail/090211100013&quot;</span><span class="p">,</span>
+
+        <span class="p">]</span>
+        <span class="k">for</span> <span class="n">url</span> <span class="ow">in</span> <span class="n">urls</span><span class="p">:</span>
+            <span class="k">yield</span> <span class="n">scrapy</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">parse</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">parse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">response</span><span class="p">):</span>
+        <span class="k">yield</span><span class="p">{</span>
+        <span class="s1">&#39;Abstrak&#39;</span> <span class="p">:</span> <span class="n">response</span><span class="o">.</span><span class="n">css</span><span class="p">(</span><span class="s1">&#39;#content_journal &gt; ul &gt; li &gt; div:nth-child(4) &gt; div:nth-child(2) &gt;  ::text&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">extract</span><span class="p">(),</span>
+
+
+        <span class="p">}</span>
+</code></pre></div>
+
+<p>Untuk menjalankan file buka cmd di lokasi file kemudian jalankan kode berikut :</p>
+<div class="codehilite"><pre><span></span><code>scrapy run spider crawling.py
+</code></pre></div>
+
+<p>Untuk menyimpan data dalam bentuk csv tinnggal menambakan (-O nama file).csv di cmd seperti berikut:</p>
+<div class="codehilite"><pre><span></span><code>scrapy run spider pta.py -crawling.csv
+</code></pre></div>
+
+<h1 id="latent_semantic_analysis"><strong>Latent Semantic Analysis</strong><a class="headerlink" href="#latent_semantic_analysis" title="Permanent link">&para;</a></h1>
+<p>Latent Semantic Analysis merupakan algoritma yang digunakan untuk menganalisa hubungan antara sebuah frase atau kalimat pada sebuah dokumen. </p>
+<p>Sebelum menganalisa, data harus di TF-IDF terlebih dahulu. Berikut merupakan langkah-langkah untuk menganalisa data menggunakan metode Latent Semantic Analysis.</p>
+<p>Membuat import seperti berikut :</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">matplotlib</span> <span class="kn">import</span> <span class="n">style</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="o">%</span><span class="n">matplotlib</span> <span class="n">inline</span>  
+<span class="n">style</span><span class="o">.</span><span class="n">use</span><span class="p">(</span><span class="s1">&#39;fivethirtyeight&#39;</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">style</span><span class="o">=</span><span class="s1">&#39;whitegrid&#39;</span><span class="p">,</span><span class="n">color_codes</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">nltk</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>
+<span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">word_tokenize</span><span class="p">,</span><span class="n">sent_tokenize</span>
+
+<span class="c1">#preprosessing</span>
+<span class="kn">from</span> <span class="nn">nltk.corpus</span> <span class="kn">import</span> <span class="n">stopwords</span>  <span class="c1">#stopwords</span>
+<span class="kn">from</span> <span class="nn">nltk</span> <span class="kn">import</span> <span class="n">word_tokenize</span><span class="p">,</span><span class="n">sent_tokenize</span> <span class="c1"># tokenizing</span>
+<span class="kn">from</span> <span class="nn">nltk.stem</span> <span class="kn">import</span> <span class="n">PorterStemmer</span><span class="p">,</span><span class="n">LancasterStemmer</span>  <span class="c1"># using the Porter Stemmer and Lancaster Stemmer and others</span>
+<span class="kn">from</span> <span class="nn">nltk.stem.snowball</span> <span class="kn">import</span> <span class="n">SnowballStemmer</span>
+<span class="kn">from</span> <span class="nn">nltk.stem</span> <span class="kn">import</span> <span class="n">WordNetLemmatizer</span>  <span class="c1"># lammatizer from WordNet</span>
+
+<span class="c1"># for named entity recognition (NER)</span>
+<span class="kn">from</span> <span class="nn">nltk</span> <span class="kn">import</span> <span class="n">ne_chunk</span>
+
+<span class="c1"># vectorizers untuk membuat document-term-matrix (DTM)</span>
+<span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="kn">import</span> <span class="n">TfidfVectorizer</span><span class="p">,</span><span class="n">CountVectorizer</span>
+
+<span class="c1">#stop-words</span>
+<span class="n">stop_words</span><span class="o">=</span><span class="nb">set</span><span class="p">(</span><span class="n">nltk</span><span class="o">.</span><span class="n">corpus</span><span class="o">.</span><span class="n">stopwords</span><span class="o">.</span><span class="n">words</span><span class="p">(</span><span class="s1">&#39;indonesian&#39;</span><span class="p">))</span>
+</code></pre></div>
+
+<p>Kemudian memanggil data yang akan di publish. kemudian run</p>
+<div class="codehilite"><pre><span></span><code>df=pd.read_csv(&#39;ekonomi_management.csv&#39;)
+df.head()
+</code></pre></div>
+
+<p>jika berhasil akan muncul data seperti berikut :</p>
+<div class="codehilite"><pre><span></span><code>Aplikasi nyata pemanfaatan teknologi informasi...
+1   Abstrak\r\nPenelitian ini menggunakan metode k...
+2   ABSTRAK\r\n\tDharma Abidin Syah,Kesimpulan: (1...
+3   ABSTRAK\r\...
+4   Tujuan penelitian ini adalah untuk mengetahui ...
+</code></pre></div>
+
+<p>Kemudian melakukan pre-processing data dan proses cleaning pada data</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">import</span> <span class="nn">string</span> 
+<span class="kn">import</span> <span class="nn">re</span> <span class="c1">#regex library</span>
+
+<span class="c1"># import word_tokenize &amp; FreqDist from NLTK</span>
+<span class="kn">from</span> <span class="nn">nltk.tokenize</span> <span class="kn">import</span> <span class="n">word_tokenize</span> 
+<span class="kn">from</span> <span class="nn">nltk.probability</span> <span class="kn">import</span> <span class="n">FreqDist</span>
+
+<span class="c1">#remove number</span>
+<span class="k">def</span> <span class="nf">remove_number</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="k">return</span>  <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;\d+&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s1">&#39;hapus angka&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Abstrak&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">remove_number</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</code></pre></div>
+
+<p>Menghapus simbol dan tanda baca</p>
+<div class="codehilite"><pre><span></span><code><span class="nv">def</span> <span class="nv">remove_punctuation</span><span class="ss">(</span><span class="nv">text</span><span class="ss">)</span>:
+    <span class="k">return</span> <span class="nv">text</span>.<span class="nv">translate</span><span class="ss">(</span><span class="nv">str</span>.<span class="nv">maketrans</span><span class="ss">(</span><span class="s2">&quot;&quot;</span>,<span class="s2">&quot;&quot;</span>,<span class="nv">string</span>.<span class="nv">punctuation</span><span class="ss">))</span>
+
+<span class="nv">df</span>[<span class="s1">&#39;</span><span class="s">hapus simbol</span><span class="s1">&#39;</span>] <span class="o">=</span> <span class="nv">df</span>[<span class="s1">&#39;</span><span class="s">hapus angka</span><span class="s1">&#39;</span>].<span class="nv">apply</span><span class="ss">(</span><span class="nv">remove_punctuation</span><span class="ss">)</span>
+<span class="nv">df</span>.<span class="nv">head</span><span class="ss">(</span><span class="mi">10</span><span class="ss">)</span>
+
+<span class="nv">def</span> <span class="nv">clean_text</span><span class="ss">(</span><span class="nv">headline</span><span class="ss">)</span>:
+  <span class="nv">le</span><span class="o">=</span><span class="nv">WordNetLemmatizer</span><span class="ss">()</span>
+  <span class="nv">word_tokens</span><span class="o">=</span><span class="nv">word_tokenize</span><span class="ss">(</span><span class="nv">headline</span><span class="ss">)</span>
+  <span class="nv">tokens</span><span class="o">=</span>[<span class="nv">le</span>.<span class="nv">lemmatize</span><span class="ss">(</span><span class="nv">w</span><span class="ss">)</span> <span class="k">for</span> <span class="nv">w</span> <span class="nv">in</span> <span class="nv">word_tokens</span> <span class="k">if</span> <span class="nv">w</span> <span class="nv">not</span> <span class="nv">in</span> <span class="nv">stop_words</span> <span class="nv">and</span> <span class="nv">len</span><span class="ss">(</span><span class="nv">w</span><span class="ss">)</span><span class="o">&gt;</span><span class="mi">3</span>]
+  <span class="nv">cleaned_text</span><span class="o">=</span><span class="s2">&quot;</span><span class="s"> </span><span class="s2">&quot;</span>.<span class="nv">join</span><span class="ss">(</span><span class="nv">tokens</span><span class="ss">)</span>
+  <span class="k">return</span> <span class="nv">cleaned_text</span>
+
+<span class="nv">df</span>[<span class="s1">&#39;</span><span class="s">stopword</span><span class="s1">&#39;</span>]<span class="o">=</span><span class="nv">df</span>[<span class="s1">&#39;</span><span class="s">hapus simbol</span><span class="s1">&#39;</span>].<span class="nv">apply</span><span class="ss">(</span><span class="nv">clean_text</span><span class="ss">)</span>
+
+<span class="nv">df</span>.<span class="nv">head</span><span class="ss">(</span><span class="mi">10</span><span class="ss">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>df.drop([&#39;Abstrak&#39;, &#39;hapus angka&#39;, &#39;hapus simbol&#39;],axis=1,inplace=True)
+df.head(10)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>df[&#39;stopword&#39;][0]
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>vect =TfidfVectorizer(stop_words=stop_words,max_features=1000)
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>vect_text=vect.fit_transform(df[&#39;stopword&#39;])
+
+print(vect_text.shape)
+print(vect_text)
+</code></pre></div>
+
+<p>IDF</p>
+<div class="codehilite"><pre><span></span><code>idf=vect.idf_
+
+dd=dict(zip(vect.get_feature_names(), idf))
+l=sorted(dd, key=(dd).get)
+
+print(l[0],l[-1])
+</code></pre></div>
+
+<p><strong>Latent Semantic Analysis</strong> </p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="kn">import</span> <span class="n">TruncatedSVD</span>
+<span class="n">lsa_model</span> <span class="o">=</span> <span class="n">TruncatedSVD</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">algorithm</span><span class="o">=</span><span class="s1">&#39;randomized&#39;</span><span class="p">,</span> <span class="n">n_iter</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="n">lsa_top</span><span class="o">=</span><span class="n">lsa_model</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">vect_text</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">lsa_top</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">lsa_top</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>  <span class="c1"># (no_of_doc*no_of_topics)</span>
+
+<span class="n">l</span><span class="o">=</span><span class="n">lsa_top</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Document 0 :&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">topic</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Topic &quot;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s2">&quot; : &quot;</span><span class="p">,</span><span class="n">topic</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>print(lsa_model.components_.shape) # (no_of_topics*no_of_words)
+print(lsa_model.components_)
+</code></pre></div>
+
+<p>Menampilkan kata yang penting di setiap topik.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">vocab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">vect</span><span class="o">.</span><span class="n">get_feature_names</span><span class="p">()</span><span class="w"></span>
+
+<span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">comp</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">enumerate</span><span class="p">(</span><span class="n">lsa_model</span><span class="o">.</span><span class="n">components_</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="n">vocab_comp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">zip</span><span class="p">(</span><span class="n">vocab</span><span class="p">,</span><span class="w"> </span><span class="n">comp</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">sorted_words</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">sorted</span><span class="p">(</span><span class="n">vocab_comp</span><span class="p">,</span><span class="w"> </span><span class="n">key</span><span class="o">=</span><span class="w"> </span><span class="n">lambda</span><span class="w"> </span><span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="w"> </span><span class="n">reverse</span><span class="o">=</span><span class="n">True</span><span class="p">)[:</span><span class="mi">15</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Topic &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;: &quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">t</span><span class="w"> </span><span class="ow">in</span><span class="w"> </span><span class="n">sorted_words</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">end</span><span class="o">=</span><span class="s2">&quot; &quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span><span class="w"></span>
+</code></pre></div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      &copy; 2022 Romali
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+      
+      
+    
+    <a href="https://github.com/peaceiris" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"/></svg>
+    </a>
+  
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/piris314en" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": ".", "features": ["tabs"], "search": "assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.0238f547.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+    
+  </body>
+</html>
